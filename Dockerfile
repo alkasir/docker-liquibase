@@ -17,4 +17,4 @@ volume ["/changelogs"]
 
 workdir /
 
-entrypoint ["/bin/bash"]
+entrypoint ["/bin/lb"]

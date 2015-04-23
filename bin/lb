@@ -13,17 +13,4 @@ cat <<CONF> /liquibase.properties
   changeLogFile: /changelogs/$CHANGELOG_FILE
 CONF
 
-case "$1" in
-  "update")
-    liquibase update
-    ;;
-
-  "diff")
-    echo "DIFF IS NOT IMPLEMENTED YET"
-    exit 1
-    ;;
-
-  *)
-    echo "liquibase.properties updated"
-    ;;
-esac
+liquibase "$@"
