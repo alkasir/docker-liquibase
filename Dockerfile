@@ -1,4 +1,4 @@
-from dockerfile/java
+from java:7
 
 maintainer Thomas Frössman<thomasf@jossystem.se>
 
